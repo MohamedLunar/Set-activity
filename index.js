@@ -14,4 +14,3 @@ client.once('ready', () => {
 });
 
 // تسجيل الدخول باستخدام التوكن
-client.login('MTI2ODYxNjc4MTk1MDQ4NDU0MQ.GYIJSU.Df98qMHlH-Q2TfKCvWY6f6JQTG0_D4D-GiSTRU');
