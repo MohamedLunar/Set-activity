@@ -1,8 +1,17 @@
-bot.on('ready', () => {
-  bot.user.setActivity("?help | Ticket Manager", {type: Watching});
+const { Client, GatewayIntentBits } = require('discord.js');
+const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+
+client.once('ready', () => {
+    console.log(`Logged in as ${client.user.tag}!`);
+
+    // تعيين النشاط للبوت
+    client.user.setActivity('لعب الشطرنج', { type: 'PLAYING' });
+
+    // يمكنك استخدام أنواع أخرى من الأنشطة مثل:
+    // client.user.setActivity('مشاهدة فيديو', { type: 'WATCHING' });
+    // client.user.setActivity('الاستماع إلى الموسيقى', { type: 'LISTENING' });
+    // client.user.setActivity('البث المباشر', { type: 'STREAMING', url: 'https://www.twitch.tv/username' });
 });
 
-//Comments
-//You can switch between 3 types of activities (Playing -> 1 | Listening -> 2 | Watching -> 3)
-//Activity type must be an INT
-//Placeholders must be changed
+// تسجيل الدخول باستخدام التوكن
+client.login('TOKEN');
