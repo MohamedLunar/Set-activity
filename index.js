@@ -1,5 +1,5 @@
 bot.on('ready', () => {
-  bot.user.setActivity("Placeholder_text", {type: Placeholder_activity});
+  bot.user.setActivity("?help | Ticket Manager", {type: Watching});
 });
 
 //Comments
